@@ -20,7 +20,7 @@ The CatDog.mat is a dataset of cats and dogs images. This dataset is structured 
 3. Build a model for predicton:
    Model Selection: As mentioned above, Inception-ResNet-v2 is a convolutional neural network that is trained on more than a million images from the ImageNet database developed by Google.
    In this project, I import the InceptionResNetV2 architecture from Keras applications and use it as the based-model for transfer learning to classify Cat and dog images.
-   Fine-tuning: Freeze certain layers of the pre-trained InceptionResNetV2 model to retain learned features and add custom fully connected layers for classification. This technique is o􀅌en used when using pre-trained models to avoid overfi􀆫ng and retain the learned features.
+   Fine-tuning: Freeze certain layers of the pre-trained InceptionResNetV2 model to retain learned features and add custom fully connected layers for classification. This technique is often used when using pre-trained models to avoid overfitting and retain the learned features.
 • Input Preprocessing: Normalizes the input data using batch normalization and preprocesses it for compatibility with the pre-trained InceptionResNetV2 model.
 • Feature Extraction: Passes the preprocessed input through the base model to extract higher-level features. This part utilizes the convolutional layers of the InceptionResNetV2 model.
 • Flatening: Flatens the extracted features into a vector to prepare them for fully connected layers.
